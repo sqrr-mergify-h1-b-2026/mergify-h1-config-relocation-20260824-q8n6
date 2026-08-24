@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: trusted configuration relocation guard q8n6
+    conditions:
+      - label=h1-relocate-config-q8n6
+      - -mergify-configuration-changed
+      - -closed
+    actions:
+      merge:
+        method: squash
